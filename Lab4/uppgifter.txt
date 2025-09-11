@@ -1,0 +1,162 @@
+[1]
+Deklarera två variabler av datatyp 'float' med namnen 'tal1' och 'tal2'
+Läs in första input från användaren 
+
+SÅ LÄNGE (första input inte är ett tal)
+  visa felmeddelande och be användaren om ett nytt input som är numeriskt
+
+tilldela första input till variabel 'tal1'
+Läs in andra input från användaren 
+
+SÅ LÄNGE (andra input inte är ett tal)
+  visa felmeddelande och be användaren om ett nytt input som är numeriskt
+
+tilldela andra input till variabel 'tal2'
+
+OM (tal1 < tal2)
+  skriv ut "Tal2 är störst"
+OM ANNARS (tal2 < tal1)
+  skriv ut "Tal1 är störst"
+ANNARS
+  skriv ut "Båda talen är lika stora"
+
+[2]
+Deklarera tre variabler av datatyp 'float' med namnen 'tal1', 'tal2' och 'tal3'
+Läs in första input från användaren 
+
+SÅ LÄNGE (första input inte är ett tal)
+  visa felmeddelande och be användaren om ett nytt input som är numeriskt
+
+tilldela första input till variabel 'tal1'
+Läs in andra input från användaren 
+
+SÅ LÄNGE (andra input inte är ett tal)
+  visa felmeddelande och be användaren om ett nytt input som är numeriskt
+
+tilldela andra input till variabel 'tal2'
+Läs in tredje input från användaren 
+
+SÅ LÄNGE (tredje input inte är ett tal)
+  visa felmeddelande och be användaren om ett nytt input som är numeriskt
+
+tilldela andra input till variabel 'tal3'
+
+OM (tal1 == tal2 == tal3)
+  skriv ut "Alla talen är lika stora"
+ANNARS
+  OM (tal2 < tal1 OCH tal3 < tal1)
+    skriv ut "tal1 är störst!"
+  OM ANNARS (tal1 < tal2 OCH tal3 < tal2)
+    skriv ut "tal2 är störst!"
+  OM ANNARS (tal1 < tal3 OCH tal2 < tal3)
+    skriv ut "tal3 är störst!"
+  ANNARS
+    OM (tal1 == tal2)
+      skriv ut "tal1 och tal2 är lika stora och större än tal3"
+    OM ANNARS (tal2 == tal3)
+      skriv ut "tal2 och tal3 är lika stora och större än tal1"
+    OM ANNARS (tal1 == tal3)
+      skriv ut "tal1 och tal3 är lika stora och större än tal2"
+
+[3]
+Deklarera två variabler, en med namnet 'räknare', en med namnet 'input'
+Tilldela 'räknare' med värdet 1
+Be användaren skriva in ett tal mellan 1 och 10 och läs in input (vilken mult.tabell)
+
+SÅ LÄNGE (input inte är ett tal)
+  visa felmeddelande och be användaren om ett nytt input mellan 1 och 10
+
+tilldela input till variabel 'input'
+
+SÅ LÄNGE (räknare <= 10)
+  skriv ut "{räknare}*{input}={räknare*input}"
+  öka räknare med 1
+
+[4]
+Deklarera två variabler, 'rad' och 'kol', tilldela värdet 1 till båda
+
+SÅ LÄNGE (rad <= 10)
+  OM (rad == 1)
+    SÅ LÄNGE (rad <= 10)
+      skriv ut rad
+      öka rad
+    tilldela åter 1 till 'rad'
+    radbryt
+
+  SÅ LÄNGE (kol <= 10)
+    skriv ut "{kol*rad}"
+    öka kol med 1
+  öka rad med 1
+  radbryt
+
+[5]
+Deklarera två variabler, 'räknare' och 'summa', tilldela värdet 0 till båda
+Deklarera 'input'
+Skriv ut ”Ange värde. Ange -1 om inga fler värden”
+Läs in input och tilldela det till variabel med samma namn
+
+SÅ LÄNGE (input inte är -1)
+  lägg till input till summa (summa += input) 
+  öka räknare med 1
+  Print ”Ange värde. Ange -1 om inga fler värden”
+
+OM (räknare inte är 0)
+  Skriv ut "{summa/räknare}"
+ANNARS
+  skriv ut "inga tal givna"
+
+[6]
+deklarera variabeln 'tal' och tilldela den med ett slumpat värde mellan 1-100
+Deklarera 'input'
+Läs input från användaren och tilldela till 'input'
+SÅ LÄNGE (input != tal)
+  OM (input < tal)
+    skriv ut "Du gissade ett för lågt nummer!"
+  ANNARS
+    skriv ut "Du gissade ett för högt nummer!"
+
+  Läs input på nytt
+
+skriv ut "Rätt svar!"
+
+[7]
+Deklarera variabel 'kostnad' och tilldela värde 0.0f
+Deklarera input
+Läs input och tilldela värdet till variabel med samma namn
+SÅ LÄNGE (input != -1)
+  OM (input == 1)
+    kostnad += 600
+  OM ANNARS (input == 2)
+    kostnad += 300
+  OM ANNARS (input == 3)
+    kostnad += 1500
+  ANNARS
+    Skriv ut "Input ej giltigt"
+    Läs input igen och tilldela värdet till variabel med samma namn
+    
+OM (kostnad > 3000)
+  kostnad = kostnad * 0.9
+
+Skriv ut faktura
+
+[11]
+Testa kort 
+// Skulle kunna ha en early return här om kort ej är giltigt
+OM (!kort)
+  Mata ut kort
+  visa felmeddelande
+
+Testa PIN
+OM (!PIN)
+  Mata ut kort
+  visa felmeddelande
+
+Läs in saldo
+Läs in uttagsbelopp
+OM (uttagsbelopp > saldo)
+  Mata ut kort
+  visa felmeddelande
+
+Dra pengar från konto
+Mata ut pengar
+Mata ut kort

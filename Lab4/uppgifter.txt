@@ -4,12 +4,14 @@ Läs in första input från användaren
 
 SÅ LÄNGE (första input inte är ett tal)
   visa felmeddelande och be användaren om ett nytt input som är numeriskt
+  Läs in nytt första input
 
 tilldela första input till variabel 'tal1'
 Läs in andra input från användaren 
 
 SÅ LÄNGE (andra input inte är ett tal)
   visa felmeddelande och be användaren om ett nytt input som är numeriskt
+  Läs in nytt andra input
 
 tilldela andra input till variabel 'tal2'
 
@@ -79,15 +81,41 @@ SÅ LÄNGE (rad <= 10)
   OM (rad == 1)
     SÅ LÄNGE (rad <= 10)
       skriv ut rad
+      skriv ut mellanslag
       öka rad
+
     tilldela åter 1 till 'rad'
     radbryt
 
+  skriv ut "{rad} "
+
   SÅ LÄNGE (kol <= 10)
-    skriv ut "{kol*rad}"
+    skriv ut "{kol*rad} "
     öka kol med 1
+
+  kol = 1
   öka rad med 1
   radbryt
+
+for (i = 1; i <= 10; i++){
+    if (i == 1){
+      while (i <= 10){
+        print(i + " ");
+        i++;
+      }
+
+      i = 1;
+      print("\n");
+    }
+
+    print(i);
+
+  for (j = 1; j <= 10; j++){
+    print(i * j);
+  }
+
+  print("\n");
+}
 
 [5]
 Deklarera två variabler, 'räknare' och 'summa', tilldela värdet 0 till båda

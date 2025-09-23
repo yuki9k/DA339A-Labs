@@ -1,6 +1,6 @@
 import java.util.Scanner;
 
-public class WeekDays {
+public class Cure {
   public static void main(String args[]) {
     int input;
     Scanner sc = new Scanner(System.in);
@@ -22,21 +22,20 @@ public class WeekDays {
 
     switch (input) {
       case 1:
-        System.out.println("Monday");
+        System.out.println("Monday, you can fall apart");
       case 2:
         System.out.println("Tuesday");
       case 3:
-        System.out.println("Wednesday");
+        System.out.println("Wednesday, break my heart");
       case 4:
-        System.out.println("Thursday");
+        System.out.println("Oh, Thursday doesn't even start");
       case 5:
-        System.out.println("Friday");
-        break;
+        System.out.println("It's Friday, I'm in love");
       case 6:
-        System.out.println("Saturday");
+        System.out.println("Saturday, wait");
         break;
       case 7:
-        System.out.println("Sunday");
+        System.out.println("And Sunday always comes too late");
         break;
     }
 
